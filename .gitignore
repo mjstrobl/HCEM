@@ -1,0 +1,6 @@
+src/main/java/ca/ualberta/cs/HCEM_tester.java
+*.iml
+src/main/main.iml
+.idea/
+target/
+out/
