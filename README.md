@@ -1,10 +1,10 @@
 # HCEM
 
-##Description
+## Description
 
 Based on our ECML-PKDD 2020 paper: "Model-based Clustering with HDBSCAN*"
 
-##Dependencies
+## Dependencies
 
 Download the HDBSCAN implementation:
 
@@ -16,7 +16,7 @@ Maven is required to run the code. Run the following maven commands:
 1. mvn install:install-file -Dfile=&lt;path to HDBSCAN_Star.jar&gt; -DgroupId=ca.ualberta.cs -DartifactId=HDBSCAN -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true
 2. mvn clean install <br>
 
-##Run
+## Run
 
 Run the program with the following command, description of flags below:
 
