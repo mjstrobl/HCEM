@@ -53,7 +53,7 @@ public class HDBSCANRunner {
             startTime = System.currentTimeMillis();
             clusters = HDBSCANStar.computeHierarchyAndClusterTree(mst, parameters.minClusterSize,
                     parameters.compactHierarchy, null, parameters.hierarchyFile,
-                    null, ",", pointNoiseLevels, pointLastClusters, null);
+                    parameters.treeFile, ",", pointNoiseLevels, pointLastClusters, parameters.visualizationFile);
         }
         catch (IOException ioe) {
             System.err.println("Error writing to hierarchy file or cluster tree file.");
@@ -73,6 +73,8 @@ public class HDBSCANRunner {
             inputName = parameters.inputFile.substring(0, parameters.inputFile.lastIndexOf("."));
 
         parameters.hierarchyFile = inputName + "_" + criterion + "_hierarchy.csv";
+        parameters.treeFile = inputName + "_" + criterion + "_tree.csv";
+        parameters.visualizationFile = inputName + "_" + criterion + "_visualization.vis";
         parameters.minPoints = minPoints;
         parameters.minClusterSize = minPoints;
         parameters.distanceFunction = new EuclideanDistance();
@@ -89,7 +91,8 @@ public class HDBSCANRunner {
         public Integer minClusterSize;
         public boolean compactHierarchy;
         public DistanceCalculator distanceFunction;
-
+        public String treeFile;
+        public String visualizationFile;
         public String hierarchyFile;
     }
 }
