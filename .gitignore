@@ -4,3 +4,7 @@ src/main/main.iml
 .idea/
 target/
 out/
+lib/
+*tree.csv
+*hierarchy.csv
+*.vis

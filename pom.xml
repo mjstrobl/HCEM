@@ -25,6 +25,11 @@
             <artifactId>commons-cli</artifactId>
             <version>1.4</version>
         </dependency>
+        <dependency>
+            <groupId>ca.ualberta.cs</groupId>
+            <artifactId>HDBSCAN</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
